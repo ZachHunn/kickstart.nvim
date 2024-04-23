@@ -496,7 +496,7 @@ vim.defer_fn(function()
 end, 0)
 -- Nvim-Tree keymaps
 
-vim.keymap.set('n', '<leader>t', ':NvimTreeToggle<CR>', { desc = 'Toggle File Tree' })
+vim.keymap.set('n', '<>', ':NvimTreeToggle<CR>', { desc = 'Toggle File Tree' })
 
 -- Terminal Keymaps
 function OpenNewTerminalWithAdjustedHeight(height)
@@ -507,7 +507,7 @@ function OpenNewTerminalWithAdjustedHeight(height)
 end
 
 vim.keymap.set('n', '<leader>f', ':NvimTreeFocus<CR>', { desc = 'Focus on NvimTree' })
-vim.keymap.set('n', '<leader>T', ':lua OpenNewTerminalWithAdjustedHeight(20)<CR>', { desc = 'Open new terminal' })
+-- vim.keymap.set('n', '<leader>T', ':lua OpenNewTerminalWithAdjustedHeight(20)<CR>', { desc = 'Open new terminal' })
 vim.keymap.set('t', '<esc>', '<C-\\><C-N>', { desc = 'Exit terminal mode' })
 vim.keymap.set('n', '|', ':vsplit new | terminal<CR>', { desc = 'Split Terminal' })
 vim.keymap.set('t', '<C-c>', '<C-c><CR>', { desc = 'terminate running command' })
